@@ -13,7 +13,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.mvilearn1.model.model.User
 import com.example.mvilearn1.ui.intent.MainIntent
 import com.example.mvilearn1.viewModel.MainViewModel
@@ -63,8 +66,16 @@ fun UserLazyColumnItem(user: User.UserItem) {
     ) {
 
         Text(text = "id: " + user.id, color = Color.Black)
-        Text(text = "name: " + user.name, color = Color.Black)
-        Text(text = "email: " + user.email, color = Color.Black)
+
+        Text(
+            text = "name: " + user.name, color = Color.Black ,
+            style = TextStyle(fontWeight = FontWeight.Bold , fontSize = 18.sp)
+        )
+
+        Text(
+            text = "email: " + user.email, color = Color.Black,
+            style = TextStyle(fontSize = 18.sp)
+        )
 
     }
 
