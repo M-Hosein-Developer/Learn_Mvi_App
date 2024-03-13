@@ -71,16 +71,20 @@ dependencies {
 
 
     //lifecycle
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:{last-version}")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:{last-version}")
-    //glide)
-    implementation("com.github.bumptech.glide:glide:{last-version}")
-    //retrofit)
-    implementation("com.squareup.retrofit2:retrofit:{last-version}")
-    implementation("com.squareup.retrofit2:converter-moshi:{last-version}")
-    //coroutine)
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:{last-version}")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:{last-version}")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+
+    //Coil
+    implementation("io.coil-kt:coil-compose:2.5.0")
+    implementation("io.coil-kt:coil-svg:2.5.0")
+
+    //retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    //coroutine
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
 
     //Dagger Hilt
     implementation("com.google.dagger:hilt-android:2.50")
