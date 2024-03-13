@@ -1,9 +1,7 @@
 package com.example.mvilearn1.model.repository
 
-import com.example.mvilearn1.model.api.ApiHelper
+interface MainRepository {
 
-class MainRepository(private val apiHelper: ApiHelper) {
-
-    suspend fun getUser() = apiHelper.getUser()
+    suspend fun getUser() : List<User>
 
 }
